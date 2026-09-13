@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevOps Career Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <span>&lt;/&gt;</span> DevOps<span>Hub</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#learning">Learning</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">YOUR DEVOPS JOURNEY STARTS HERE</p>
+
+            <h1>
+                Build. Deploy.<br>
+                <span>Automate.</span>
+            </h1>
+
+            <p class="hero-description">
+                Learn DevOps technologies, explore industry tools,
+                build real-world projects and grow your cloud career.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#learning" class="btn primary-btn">
+                    Start Learning
+                </a>
+
+                <a href="#projects" class="btn secondary-btn">
+                    Explore Projects
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="terminal">
+
+            <div class="terminal-top">
+                <span class="circle red"></span>
+                <span class="circle yellow"></span>
+                <span class="circle green"></span>
+            </div>
+
+            <div class="terminal-body">
+                <p><span class="green-text">$</span> git push origin main</p>
+                <p><span class="green-text">✓</span> Code pushed successfully</p>
+                <p><span class="green-text">✓</span> Tests passed</p>
+                <p><span class="green-text">✓</span> Docker image built</p>
+                <p><span class="green-text">✓</span> Deployment successful</p>
+                <p class="cursor">_</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Learning Paths -->
+    <section id="learning" class="section">
+
+        <div class="section-heading">
+            <p>LEARNING PATH</p>
+            <h2>Master the DevOps Stack</h2>
+            <span>
+                Follow a practical path from fundamentals to cloud deployment.
+            </span>
+        </div>
+
+
+        <div class="learning-grid">
+
+            <div class="learning-card">
+                <div class="icon">01</div>
+                <h3>Git & GitHub</h3>
+                <p>
+                    Learn version control, branches, pull requests
+                    and collaborative development.
+                </p>
+                <span class="status">START HERE</span>
+            </div>
+
+
+            <div class="learning-card">
+                <div class="icon">02</div>
+                <h3>Docker</h3>
+                <p>
+                    Understand containers, images, Dockerfiles
+                    and Docker Compose.
+                </p>
+                <span class="status">NEXT STEP</span>
+            </div>
+
+
+            <div class="learning-card">
+                <div class="icon">03</div>
+                <h3>CI/CD</h3>
+                <p>
+                    Automate testing, building and deployment
+                    using modern pipelines.
+                </p>
+                <span class="status">AUTOMATE</span>
+            </div>
+
+
+            <div class="learning-card">
+                <div class="icon">04</div>
+                <h3>Kubernetes</h3>
+                <p>
+                    Learn container orchestration, deployments,
+                    services and scaling.
+                </p>
+                <span class="status">ORCHESTRATE</span>
+            </div>
+
+
+            <div class="learning-card">
+                <div class="icon">05</div>
+                <h3>AWS Cloud</h3>
+                <p>
+                    Deploy applications and understand
+                    essential cloud infrastructure.
+                </p>
+                <span class="status">GO CLOUD</span>
+            </div>
+
+
+            <div class="learning-card">
+                <div class="icon">06</div>
+                <h3>Terraform</h3>
+                <p>
+                    Manage cloud infrastructure using
+                    Infrastructure as Code.
+                </p>
+                <span class="status">BUILD INFRA</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Tools -->
+    <section id="tools" class="section tools-section">
+
+        <div class="section-heading">
+            <p>TECHNOLOGY</p>
+            <h2>DevOps Toolkit</h2>
+            <span>
+                Tools used to build, automate and deploy modern applications.
+            </span>
+        </div>
+
+
+        <div class="tools-grid">
+
+            <div class="tool-card">
+                <strong>Git</strong>
+                <span>Version Control</span>
+            </div>
+
+            <div class="tool-card">
+                <strong>GitHub</strong>
+                <span>Code Collaboration</span>
+            </div>
+
+            <div class="tool-card">
+                <strong>Docker</strong>
+                <span>Containers</span>
+            </div>
+
+            <div class="tool-card">
+                <strong>AWS</strong>
+                <span>Cloud Platform</span>
+            </div>
+
+            <div class="tool-card">
+                <strong>K8s</strong>
+                <span>Orchestration</span>
+            </div>
+
+            <div class="tool-card">
+                <strong>Terraform</strong>
+                <span>Infrastructure as Code</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+
+        <div class="section-heading">
+            <p>PRACTICAL LEARNING</p>
+            <h2>Build Real Projects</h2>
+            <span>
+                Turn your DevOps knowledge into practical experience.
+            </span>
+        </div>
+
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <span class="project-number">01</span>
+                <h3>Containerized Web App</h3>
+                <p>
+                    Build and run a web application inside Docker containers.
+                </p>
+                <div class="tags">
+                    <span>Docker</span>
+                    <span>Node.js</span>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <span class="project-number">02</span>
+                <h3>CI/CD Pipeline</h3>
+                <p>
+                    Automatically test, build and deploy an application
+                    using GitHub Actions.
+                </p>
+                <div class="tags">
+                    <span>GitHub Actions</span>
+                    <span>CI/CD</span>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <span class="project-number">03</span>
+                <h3>Cloud Deployment</h3>
+                <p>
+                    Deploy a Dockerized application to a cloud environment.
+                </p>
+                <div class="tags">
+                    <span>AWS</span>
+                    <span>Docker</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <p>ABOUT THE PROJECT</p>
+
+            <h2>
+                From Code to<br>
+                <span>Production.</span>
+            </h2>
+
+            <p>
+                DevOps Career Hub is a learning-focused project designed
+                to explore modern DevOps practices while building a real
+                deployment workflow.
+            </p>
+
+            <div class="stats">
+
+                <div>
+                    <strong>06</strong>
+                    <span>Learning Paths</span>
+                </div>
+
+                <div>
+                    <strong>06</strong>
+                    <span>DevOps Tools</span>
+                </div>
+
+                <div>
+                    <strong>03</strong>
+                    <span>Projects</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="logo">
+            <span>&lt;/&gt;</span> DevOps<span>Hub</span>
+        </div>
+
+        <p>
+            Built to learn. Built to deploy. Built with DevOps.
+        </p>
+
+        <p class="copyright">
+            © 2026 DevOps Career Hub
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
